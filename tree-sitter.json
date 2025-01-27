@@ -1,0 +1,31 @@
+{
+  "grammars": [
+    {
+      "name": "kanata",
+      "camelcase": "Kanata",
+      "scope": "source.kanata",
+      "path": ".",
+      "file-types": [
+        "kbd"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injection-regex": "^kanata$"
+    }
+  ],
+  "metadata": {
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "Kanata grammar for tree-sitter",
+    "links": {
+      "repository": "https://github.com/postsolar/tree-sitter-kanata"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
