@@ -12,6 +12,12 @@ Empty list
 
 -----
 
+(kanata
+  (list)
+  (list)
+  (list)
+)
+
 =====
 List of one item
 =====
@@ -24,6 +30,12 @@ List of one item
 
 -----
 
+(kanata
+  (list
+    (unquoted_item))
+  (list
+    (unquoted_item)))
+
 =====
 List of multiple items
 =====
@@ -34,6 +46,16 @@ List of multiple items
 
 -----
 
+(kanata
+  (list
+    (unquoted_item)
+    (unquoted_item)
+    (unquoted_item)
+    (unquoted_item)
+    (unquoted_item)
+    (unquoted_item)
+    (unquoted_item)))
+
 =====
 Lists with quoted items
 =====
@@ -41,6 +63,11 @@ Lists with quoted items
 (xyz "a b c d")
 
 -----
+
+(kanata
+  (list
+    (unquoted_item)
+    (quoted_item)))
 
 =====
 Nested lists
@@ -54,3 +81,13 @@ Nested lists
 
 -----
 
+(kanata
+  (list
+    (unquoted_item)
+    (unquoted_item)
+    (list
+      (quoted_item)))
+  (list
+    (unquoted_item)
+    (list
+      (unquoted_item))))
